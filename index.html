@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyansh Kumar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3f0;
+            color: #333;
+        }
+
+        .scroll-down-arrow {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full p-4 bg-white/70 backdrop-blur-sm z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#landing-page" class="text-xl sm:text-2xl font-bold text-orange-500 hover:text-orange-600 transition-colors">Priyansh Kumar</a>
+            <div class="space-x-4 text-sm sm:text-base hidden sm:flex">
+                <a href="#about-me" class="hover:text-orange-500 transition-colors">About Me</a>
+                <a href="#skills" class="hover:text-orange-500 transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-orange-500 transition-colors">Experience</a>
+                <a href="#education" class="hover:text-orange-500 transition-colors">Education</a>
+                <a href="#projects" class="hover:text-orange-500 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-orange-500 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Icon (Hamburger) -->
+            <button id="mobile-menu-button" class="sm:hidden text-gray-800 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden sm:hidden w-full bg-white/70 backdrop-blur-sm mt-2 rounded-lg shadow-lg">
+            <a href="#about-me" class="block py-2 px-4 text-center hover:bg-gray-200 rounded-t-lg">About Me</a>
+            <a href="#skills" class="block py-2 px-4 text-center hover:bg-gray-200">Skills</a>
+            <a href="#experience" class="block py-2 px-4 text-center hover:bg-gray-200">Experience</a>
+            <a href="#education" class="block py-2 px-4 text-center hover:bg-gray-200">Education</a>
+            <a href="#projects" class="block py-2 px-4 text-center hover:bg-gray-200">Projects</a>
+            <a href="#contact" class="block py-2 px-4 text-center hover:bg-gray-200 rounded-b-lg">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <div id="landing-page" class="min-h-screen flex flex-col justify-center items-center p-8 text-center transition-opacity duration-1000">
+        <div class="flex flex-col items-center mb-8">
+            <div class="w-32 h-32 sm:w-40 sm:h-40 overflow-hidden rounded-full border-4 border-orange-500 mb-4 shadow-lg">
+                <img src="https://placehold.co/160x160/FFA500/FFFFFF?text=Priyansh" alt="Priyansh Kumar" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-bold mb-2">Priyansh Kumar</h1>
+            <p class="text-lg sm:text-xl text-gray-600">Admin / Developer</p>
+        </div>
+        <div class="absolute bottom-10">
+            <a href="#about-me" class="scroll-down-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-400 hover:text-orange-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about-me" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center transition-opacity duration-1000">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-6">About Me</h2>
+        <div class="max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
+            <p class="mb-4">I am currently an M.Tech student in Educational Technology at the Indian Institute of Technology Bombay. I am also an experienced professional with a total of 19 months in the IT industry, with 11 months dedicated to Salesforce development and administration. I'm actively seeking a challenging Salesforce role where I can leverage my expertise in configuration, customization, LWC, and Apex programming. I am committed to contributing to innovative projects and continuously expanding my Salesforce capabilities in a collaborative environment.</p>
+            <p class="mb-4">I am a keen learner and enjoy working in software and exploring new technologies. I consider myself a good observer and always strive to improve myself to maintain a positive environment around me.</p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="min-h-screen flex flex-col justify-center items-center p-8 text-center transition-opacity duration-1000">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-8">My Skills</h2>
+        <div class="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-semibold mb-4 text-orange-500">Technical Skills</h3>
+                <ul class="list-disc list-inside text-left text-gray-700">
+                    <li>Salesforce Administration</li>
+                    <li>Apex, Triggers, LWC</li>
+                    <li>JAVA, SOQL</li>
+                    <li>HTML, CSS, JavaScript, Bootstrap</li>
+                    <li>React Js, Node Js, MYSQL</li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-semibold mb-4 text-orange-500">Soft Skills</h3>
+                <ul class="list-disc list-inside text-left text-gray-700">
+                    <li>Adaptability</li>
+                    <li>Good Observer</li>
+                    <li>Positive Attitude</li>
+                    <li>Leadership</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div id="experience" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center transition-opacity duration-1000">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-8">Experience</h2>
+        <div class="max-w-3xl w-full">
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                <h3 class="text-2xl font-semibold text-orange-500">Salesforce Developer</h3>
+                <p class="text-lg text-gray-600 mb-2">CloudAtBay | Feb 2023 - Mar 2024</p>
+                <ul class="list-disc list-inside text-left text-gray-700">
+                    <li>Performed Salesforce administration tasks, including user management, security settings, reports, and dashboards.</li>
+                    <li>Developed and maintained custom applications, automation processes, and integrations.</li>
+                    <li>Worked on service cloud tasks and solved daily tickets.</li>
+                    <li>Gained experience with Copado and Jira.</li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-semibold text-orange-500">Full Stack Developer</h3>
+                <p class="text-lg text-gray-600 mb-2">BarifloLabs | Jul 2022 - Feb 2023</p>
+                <ul class="list-disc list-inside text-left text-gray-700">
+                    <li>Created and successfully hosted a company website.</li>
+                    <li>Managed a three-member team as a Lead Developer.</li>
+                    <li>Created a partner company website using React Js.</li>
+                    <li>Hosted projects on Azure and performed CRUD operations with Cosmos DB.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <div id="education" class="min-h-screen flex flex-col justify-center items-center p-8 text-center transition-opacity duration-1000 bg-gray-100">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-6">Education</h2>
+        <div class="max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-semibold text-orange-500">M.Tech in Educational Technology</h3>
+                <p class="text-lg text-gray-600 mb-2">Indian Institute of Technology Bombay (IIT Bombay)</p>
+                <p class="text-gray-700">Currently pursuing a Master's degree, focusing on the intersection of technology and learning.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="min-h-screen flex flex-col justify-center items-center p-8 text-center transition-opacity duration-1000">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-8">My Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
+            <!-- Project Bariflo Labs -->
+            <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-semibold mb-2">Bariflo Labs Website</h3>
+                <p class="text-gray-600 mb-4">A company website created during my time as a Full Stack Developer.</p>
+                <a href="#" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
+            </div>
+            <!-- Project Vertox Labs -->
+            <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-semibold mb-2">Vertox Labs Website</h3>
+                <p class="text-gray-600 mb-4">A partner company website developed using React.js technology.</p>
+                <a href="#" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
+            </div>
+            <!-- Project on Azure -->
+            <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-semibold mb-2">Project on Azure</h3>
+                <p class="text-gray-600 mb-4">A static website project successfully hosted on Microsoft Azure.</p>
+                <a href="#" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
+            </div>
+            <!-- My Profile Website -->
+            <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-semibold mb-2">My Profile Website</h3>
+                <p class="text-gray-600 mb-4">A personal portfolio website project built to showcase my skills.</p>
+                <a href="#" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center transition-opacity duration-1000">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-6">Get In Touch</h2>
+        <div class="max-w-xl mx-auto text-lg sm:text-xl leading-relaxed">
+            <p class="mb-4">I'm always open to new opportunities and collaborations. Feel free to reach out to me via email or phone.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="mailto:priyansh_shiraj@outlook.com" class="inline-block bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition-colors duration-300">Email Me</a>
+                <a href="tel:+917055666635" class="inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-800 transition-colors duration-300">Call Me</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('div[id]');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Toggle mobile menu visibility
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Function to handle showing sections
+            const showSection = (targetId) => {
+                const targetSection = document.getElementById(targetId);
+                sections.forEach(section => {
+                    section.classList.add('hidden', 'opacity-0');
+                });
+                if (targetSection) {
+                    targetSection.classList.remove('hidden');
+                    setTimeout(() => {
+                        targetSection.classList.remove('opacity-0');
+                    }, 10);
+                }
+            };
+
+            // Initial view
+            showSection('landing-page');
+
+            // Handle navigation via anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    // Only prevent default for internal links
+                    if (this.hostname === window.location.hostname && this.pathname === window.location.pathname) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        showSection(targetId);
+                        // Update URL hash without jumping
+                        window.history.pushState(null, '', `#${targetId}`);
+                        // Hide mobile menu after selection
+                        if (mobileMenu) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // Handle back/forward browser button
+            window.addEventListener('popstate', () => {
+                const targetId = window.location.hash.substring(1) || 'landing-page';
+                showSection(targetId);
+            });
+        });
+    </script>
+</body>
+</html>

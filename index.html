@@ -31,6 +31,8 @@
             }
         }
     </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2k5o9SgL/p2gM84j/3e3T5i5QvL5g5F5j5G5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="overflow-x-hidden">
     <!-- Navigation Bar -->
@@ -64,13 +66,13 @@
     </nav>
 
     <!-- Landing Page -->
-    <div id="landing-page" class="min-h-screen flex flex-col justify-center items-center p-8 text-center transition-opacity duration-1000">
+    <div id="landing-page" class="min-h-screen flex flex-col justify-center items-center p-8 text-center">
         <div class="flex flex-col items-center mb-8">
             <div class="w-32 h-32 sm:w-40 sm:h-40 overflow-hidden rounded-full border-4 border-orange-500 mb-4 shadow-lg">
                 <img src="https://placehold.co/160x160/FFA500/FFFFFF?text=Priyansh" alt="Priyansh Kumar" class="w-full h-full object-cover">
             </div>
             <h1 class="text-4xl sm:text-6xl font-bold mb-2">Priyansh Kumar</h1>
-            <p class="text-lg sm:text-xl text-gray-600">M.Tech IIT Bombay</p>
+            <p class="text-lg sm:text-xl text-gray-600">M.Tech Educational Technology IIT Bombay</p>
         </div>
         <div class="absolute bottom-10">
             <a href="#about-me" class="scroll-down-arrow">
@@ -82,7 +84,7 @@
     </div>
 
     <!-- About Me Section -->
-    <div id="about-me" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center transition-opacity duration-1000">
+    <div id="about-me" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold mb-6">About Me</h2>
         <div class="max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
             <p class="mb-4">I am currently an M.Tech student in Educational Technology at the Indian Institute of Technology Bombay. I am also an experienced professional with a total of 19 months in the IT industry, with 11 months dedicated to Salesforce development and administration. I'm actively seeking a challenging Salesforce role where I can leverage my expertise in configuration, customization, LWC, and Apex programming. I am committed to contributing to innovative projects and continuously expanding my Salesforce capabilities in a collaborative environment.</p>
@@ -91,7 +93,7 @@
     </div>
 
     <!-- Skills Section -->
-    <div id="skills" class="min-h-screen flex flex-col justify-center items-center p-8 text-center transition-opacity duration-1000">
+    <div id="skills" class="min-h-screen flex flex-col justify-center items-center p-8 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold mb-8">My Skills</h2>
         <div class="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div class="bg-white rounded-xl shadow-lg p-6">
@@ -118,7 +120,7 @@
     </div>
 
     <!-- Experience Section -->
-    <div id="experience" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center transition-opacity duration-1000">
+    <div id="experience" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold mb-8">Experience</h2>
         <div class="max-w-3xl w-full">
             <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
@@ -145,7 +147,7 @@
     </div>
 
     <!-- Education Section -->
-    <div id="education" class="min-h-screen flex flex-col justify-center items-center p-8 text-center transition-opacity duration-1000 bg-gray-100">
+    <div id="education" class="min-h-screen flex flex-col justify-center items-center p-8 text-center bg-gray-100">
         <h2 class="text-4xl sm:text-5xl font-bold mb-6">Education</h2>
         <div class="max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
             <div class="bg-white rounded-xl shadow-lg p-6">
@@ -154,10 +156,18 @@
                 <p class="text-gray-700">Currently pursuing a Master's degree, focusing on the intersection of technology and learning.</p>
             </div>
         </div>
+
+        <!-- <div class="max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-semibold text-orange-500">B.Tech CSE</h3>
+                <p class="text-lg text-gray-600 mb-2">IIMT Engineering College</p>
+                <p class="text-gray-700">Currently pursuing a Master's degree, focusing on the intersection of technology and learning.</p>
+            </div>
+        </div> -->
     </div>
 
     <!-- Projects Section -->
-    <div id="projects" class="min-h-screen flex flex-col justify-center items-center p-8 text-center transition-opacity duration-1000">
+    <div id="projects" class="min-h-screen flex flex-col justify-center items-center p-8 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold mb-8">My Projects</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
             <!-- Project Bariflo Labs -->
@@ -176,7 +186,7 @@
             <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
                 <h3 class="text-2xl font-semibold mb-2">Project on Azure</h3>
                 <p class="text-gray-600 mb-4">A static website project successfully hosted on Microsoft Azure.</p>
-                <a href="https://shirajpriyansh.github.io/robo1/" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
             </div>
             <!-- My Profile Website -->
             <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
@@ -188,20 +198,28 @@
     </div>
 
     <!-- Contact Section -->
-    <div id="contact" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center transition-opacity duration-1000">
+    <div id="contact" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold mb-6">Get In Touch</h2>
         <div class="max-w-xl mx-auto text-lg sm:text-xl leading-relaxed">
-            <p class="mb-4">I'm always open to new opportunities and collaborations. Feel free to reach out to me via email or phone.</p>
-            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="www.linkedin.com/in/shiraj-priyansh" class="inline-block bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition-colors duration-300">LinkedIn</a>
-                <a href="https://github.com/ShirajPriyansh" class="inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-800 transition-colors duration-300">GitHub</a>
+            <p class="mb-4">I'm always open to new opportunities and collaborations. Feel free to reach out to me via email or phone. My LinkedIn and GitHub profiles are linked below.</p>
+            <div class="flex items-center justify-center space-x-6">
+                <a href="www.linkedin.com/in/shiraj-priyansh/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-orange-500 transition-colors duration-300">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a href="https://github.com/ShirajPriyansh" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-orange-500 transition-colors duration-300">
+                    <i class="fab fa-github-square fa-3x"></i>
+                </a>
+                <!-- You can uncomment below lines if you want to keep the email and phone buttons -->
+                <!--
+                <a href="mailto:priyansh_shiraj@outlook.com" class="inline-block bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition-colors duration-300">Email Me</a>
+                <a href="tel:+917055666635" class="inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-800 transition-colors duration-300">Call Me</a>
+                -->
             </div>
         </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('div[id]');
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
 
@@ -210,45 +228,17 @@
                 mobileMenu.classList.toggle('hidden');
             });
 
-            // Function to handle showing sections
-            const showSection = (targetId) => {
-                const targetSection = document.getElementById(targetId);
-                sections.forEach(section => {
-                    section.classList.add('hidden', 'opacity-0');
-                });
-                if (targetSection) {
-                    targetSection.classList.remove('hidden');
-                    setTimeout(() => {
-                        targetSection.classList.remove('opacity-0');
-                    }, 10);
-                }
-            };
-
-            // Initial view
-            showSection('landing-page');
-
             // Handle navigation via anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     // Only prevent default for internal links
                     if (this.hostname === window.location.hostname && this.pathname === window.location.pathname) {
-                        e.preventDefault();
-                        const targetId = this.getAttribute('href').substring(1);
-                        showSection(targetId);
-                        // Update URL hash without jumping
-                        window.history.pushState(null, '', `#${targetId}`);
                         // Hide mobile menu after selection
                         if (mobileMenu) {
                             mobileMenu.classList.add('hidden');
                         }
                     }
                 });
-            });
-
-            // Handle back/forward browser button
-            window.addEventListener('popstate', () => {
-                const targetId = window.location.hash.substring(1) || 'landing-page';
-                showSection(targetId);
             });
         });
     </script>

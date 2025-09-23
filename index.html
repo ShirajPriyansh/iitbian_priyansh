@@ -11,7 +11,6 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7f3f0;
             color: #333;
         }
 
@@ -35,6 +34,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2k5o9SgL/p2gM84j/3e3T5i5QvL5g5F5j5G5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="overflow-x-hidden">
+    <!-- Vanta.js background container -->
+    <div id="vanta-background" class="fixed inset-0 w-full h-full -z-10"></div>
+    
     <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 w-full p-4 bg-white/70 backdrop-blur-sm z-50 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
@@ -55,7 +57,7 @@
             </button>
         </div>
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden sm:hidden w-full bg-white/70 backdrop-blur-sm mt-2 rounded-lg shadow-lg">
+        <div id="mobile-menu" class="hidden sm:hidden w-full bg-white/1 backdrop-blur-sm mt-2 rounded-lg shadow-lg">
             <a href="#about-me" class="block py-2 px-4 text-center hover:bg-gray-200 rounded-t-lg">About Me</a>
             <a href="#skills" class="block py-2 px-4 text-center hover:bg-gray-200">Skills</a>
             <a href="#experience" class="block py-2 px-4 text-center hover:bg-gray-200">Experience</a>
@@ -66,17 +68,17 @@
     </nav>
 
     <!-- Landing Page -->
-    <div id="landing-page" class="min-h-screen flex flex-col justify-center items-center p-8 text-center">
+    <div id="landing-page" class="min-h-screen flex flex-col justify-center items-center p-8 text-center bg-transparent">
         <div class="flex flex-col items-center mb-8">
-            <div class="w-32 h-32 sm:w-40 sm:h-40 overflow-hidden rounded-full border-4 border-orange-500 mb-4 shadow-lg">
-                <img src="https://media.licdn.com/dms/image/v2/D5603AQHeUmVFsGTT1g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707022309278?e=1761782400&v=beta&t=86spzsgdUGRZm8PCBI6eV4npLnhXDh3e-ShXEZnZehQ" alt="Priyansh Kumar" class="w-full h-full object-cover">
-            </div>
-            <h1 class="text-4xl sm:text-6xl font-bold mb-2">Priyansh Kumar</h1>
-            <p class="text-lg sm:text-xl text-gray-600">M.Tech Educational Technology IIT Bombay</p>
+            <!-- <div class="w-32 h-32 sm:w-40 sm:h-40 overflow-hidden rounded-full border-4 border-orange-500 mb-4 shadow-lg">
+                <img src="https://placehold.co/160x160/FFA500/FFFFFF?text=Priyansh" alt="Priyansh Kumar" class="w-full h-full object-cover">
+            </div> -->
+            <h1 class="text-5xl sm:text-7xl lg:text-8xl font-bold mb-2 drop-shadow-lg">Priyansh Kumar</h1>
+            <p class="text-lg sm:text-xl text-gray-800 drop-shadow-lg">M.Tech Educational Technology IIT Bombay</p>
         </div>
         <div class="absolute bottom-10">
             <a href="#about-me" class="scroll-down-arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-400 hover:text-orange-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white hover:text-orange-500 transition-colors drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
             </a>
@@ -84,20 +86,19 @@
     </div>
 
     <!-- About Me Section -->
-    <div id="about-me" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center">
+    <div id="about-me" class="min-h-screen flex flex-col justify-center items-center p-8 bg-white/70 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold mb-6">About Me</h2>
         <div class="max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
             <p class="mb-4">I am currently an M.Tech student in Educational Technology at the Indian Institute of Technology Bombay. I am also an experienced professional with a total of 19 months in the IT industry, with 11 months dedicated to Salesforce development and administration.</p>
-
             <!-- <p class="mb-4">I am a keen learner and enjoy working in software and exploring new technologies. I consider myself a good observer and always strive to improve myself to maintain a positive environment around me.</p> -->
         </div>
     </div>
 
     <!-- Skills Section -->
-    <div id="skills" class="min-h-screen flex flex-col justify-center items-center p-8 text-center">
+    <div id="skills" class="min-h-screen flex flex-col justify-center items-center p-8 text-center bg-gray-100/70">
         <h2 class="text-4xl sm:text-5xl font-bold mb-8">My Skills</h2>
         <div class="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="bg-white/70 rounded-xl shadow-lg p-6 backdrop-blur-sm">
                 <h3 class="text-2xl font-semibold mb-4 text-orange-500">Technical Skills</h3>
                 <ul class="list-disc list-inside text-left text-gray-700">
                     <li>Salesforce Administration</li>
@@ -108,7 +109,7 @@
                     <li>Express Js</li>
                 </ul>
             </div>
-            <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="bg-white/70 rounded-xl shadow-lg p-6 backdrop-blur-sm">
                 <h3 class="text-2xl font-semibold mb-4 text-orange-500">Soft Skills</h3>
                 <ul class="list-disc list-inside text-left text-gray-700">
                     <li>Adaptability</li>
@@ -122,10 +123,10 @@
     </div>
 
     <!-- Experience Section -->
-    <div id="experience" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center">
+    <div id="experience" class="min-h-screen flex flex-col justify-center items-center p-8 bg-white/70 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold mb-8">Experience</h2>
         <div class="max-w-3xl w-full">
-            <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <div class="bg-white/70 rounded-xl shadow-lg p-6 mb-8 backdrop-blur-sm">
                 <h3 class="text-2xl font-semibold text-orange-500">Salesforce Developer</h3>
                 <p class="text-lg text-gray-600 mb-2">CloudAtBay | Feb 2023 - Mar 2024</p>
                 <ul class="list-disc list-inside text-left text-gray-700">
@@ -135,7 +136,7 @@
                     <li>Gained experience with Copado and Jira.</li>
                 </ul>
             </div>
-            <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="bg-white/70 rounded-xl shadow-lg p-6 backdrop-blur-sm">
                 <h3 class="text-2xl font-semibold text-orange-500">Full Stack Developer</h3>
                 <p class="text-lg text-gray-600 mb-2">BarifloLabs | Jul 2022 - Feb 2023</p>
                 <ul class="list-disc list-inside text-left text-gray-700">
@@ -149,99 +150,114 @@
     </div>
 
     <!-- Education Section -->
-    <div id="education" class="min-h-screen flex flex-col justify-center items-center p-8 text-center bg-gray-100">
+    <div id="education" class="min-h-screen flex flex-col justify-center items-center p-8 text-center bg-gray-100/30">
         <h2 class="text-4xl sm:text-5xl font-bold mb-6">Education</h2>
         <div class="max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
-            <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="bg-white/70 rounded-xl shadow-lg p-6 backdrop-blur-sm">
                 <h3 class="text-2xl font-semibold text-orange-500">M.Tech in Educational Technology</h3>
                 <p class="text-lg text-gray-600 mb-2">Indian Institute of Technology Bombay (IIT Bombay)</p>
                 <p class="text-gray-700">Currently pursuing a Master's degree, focusing on the intersection of technology and learning.</p>
             </div>
         </div>
-
-        <!-- <div class="max-w-3xl mx-auto text-lg sm:text-xl leading-relaxed">
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h3 class="text-2xl font-semibold text-orange-500">B.Tech CSE</h3>
-                <p class="text-lg text-gray-600 mb-2">IIMT Engineering College</p>
-                <p class="text-gray-700">Currently pursuing a Master's degree, focusing on the intersection of technology and learning.</p>
-            </div>
-        </div> -->
     </div>
 
     <!-- Projects Section -->
-    <div id="projects" class="min-h-screen flex flex-col justify-center items-center p-8 text-center">
+    <div id="projects" class="min-h-screen flex flex-col justify-center items-center p-8 text-center bg-white/30">
         <h2 class="text-4xl sm:text-5xl font-bold mb-8">My Projects</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
             <!-- Project Bariflo Labs -->
-            <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+            <div class="bg-white/70 rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
                 <h3 class="text-2xl font-semibold mb-2">Bariflo Labs Website</h3>
                 <p class="text-gray-600 mb-4">A company website created during my time as a Full Stack Developer.</p>
                 <a href="https://bariflolabs.netlify.app/" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
             </div>
             <!-- Project Vertox Labs -->
-            <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+            <div class="bg-white/70 rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
                 <h3 class="text-2xl font-semibold mb-2">Vertox Labs Website</h3>
                 <p class="text-gray-600 mb-4">A partner company website developed using React.js technology.</p>
                 <a href="https://vertoxlabs.netlify.app/" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
             </div>
             <!-- Project on Azure -->
-            <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+            <div class="bg-white/70 rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
                 <h3 class="text-2xl font-semibold mb-2">Robo App</h3>
-                <p class="text-gray-600 mb-4">A static website project successfully hosted on Microsoft Azure.</p>
+                <p class="text-gray-600 mb-4">Small App with dynamic search feature, buit using ReactJs</p>
                 <a href="https://shirajpriyansh.github.io/robo1/" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
             </div>
             <!-- My Profile Website -->
-            <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+            <div class="bg-white/70 rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
                 <h3 class="text-2xl font-semibold mb-2">My Profile Website</h3>
                 <p class="text-gray-600 mb-4">A personal portfolio website project built to showcase my skills.</p>
                 <a href="https://shirajpriyansh.netlify.app/" class="text-orange-500 hover:text-orange-600 font-medium">View Project →</a>
             </div>
         </div>
-    </div>  
+    </div>
 
     <!-- Contact Section -->
-    <div id="contact" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-center">
+    <div id="contact" class="min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100/25 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold mb-6">Get In Touch</h2>
         <div class="max-w-xl mx-auto text-lg sm:text-xl leading-relaxed">
             <p class="mb-4">I'm always open to new opportunities and collaborations. Feel free to reach out to me via email or phone. My LinkedIn and GitHub profiles are linked below.</p>
             <div class="flex items-center justify-center space-x-6">
-                <a href="www.linkedin.com/in/shiraj-priyansh/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-orange-500 transition-colors duration-300">
+                <a href="https://www.linkedin.com/in/priyansh-kumar-92147321a/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-orange-500 transition-colors duration-300">
                     <i class="fab fa-linkedin fa-3x"></i>
                 </a>
-                <a href="https://github.com/ShirajPriyansh" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-orange-500 transition-colors duration-300">
+                <a href="https://github.com/Priyansh-Shiraj" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-orange-500 transition-colors duration-300">
                     <i class="fab fa-github-square fa-3x"></i>
                 </a>
-                <!-- You can uncomment below lines if you want to keep the email and phone buttons -->
-                <!--
-                <a href="mailto:priyansh_shiraj@outlook.com" class="inline-block bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition-colors duration-300">Email Me</a>
-                <a href="tel:+917055666635" class="inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-800 transition-colors duration-300">Call Me</a>
-                -->
             </div>
         </div>
     </div>
+    
+    <!-- Footer Section -->
+    <footer class="bg-white/70 backdrop-blur-sm p-4 text-center text-gray-600">
+        <p class="text-sm">© <span id="year"></span> Priyansh Kumar. All rights reserved.</p>
+    </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
+        window.addEventListener('load', () => {
+          VANTA.BIRDS({
+              el: "#vanta-background",
+              mouseControls: true,
+              touchControls: true,
+              gyroControls: false,
+              minHeight: 200.00,
+              minWidth: 200.00,
+              scale: 1.00,
+              scaleMobile: 1.00,
+              color1: 0xf4084d,
+              color2: 0xe5ff00,
+              birdSize: 2.00,
+              wingSpan: 13.00,
+              speedLimit: 8.00,
+              quantity: 4.00,
+              backgroundAlpha: 0.00
+            })
+        });
 
-            // Toggle mobile menu visibility
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
 
-            // Handle navigation via anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    // Only prevent default for internal links
-                    if (this.hostname === window.location.hostname && this.pathname === window.location.pathname) {
-                        // Hide mobile menu after selection
-                        if (mobileMenu) {
-                            mobileMenu.classList.add('hidden');
-                        }
-                    }
+            // Close the menu when a link inside it is clicked
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
                 });
             });
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const yearSpan = document.getElementById('year');
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
         });
     </script>
 </body>

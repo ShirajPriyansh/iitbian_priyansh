@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tools Lab – Priyansh Kumar</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      html {
+        font-size: 18px;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #333;
+      }
+      .scroll-down-arrow {
+        animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="overflow-x-hidden bg-gray-50">
+    <!-- Vanta.js background container -->
+    <div
+      id="vanta-background"
+      class="fixed inset-0 w-full h-full -z-10"
+    ></div>
+
+    <!-- Navigation Bar -->
+    <nav
+      class="fixed top-0 left-0 w-full p-4 bg-white/80 backdrop-blur-sm z-50 shadow-md"
+    >
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <a
+          href="index.html"
+          class="text-xl sm:text-2xl font-bold text-orange-500 hover:text-orange-600 transition-colors"
+        >
+          Priyansh Kumar
+        </a>
+
+        <!-- Desktop menu -->
+        <div class="space-x-4 text-sm sm:text-base hidden sm:flex items-center">
+          <a
+            href="index.html"
+            class="hover:text-orange-500 transition-colors"
+          >
+            Back to Main Page
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="sm:hidden text-gray-800 focus:outline-none"
+          aria-label="Toggle navigation menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden sm:hidden w-full bg-white/95 backdrop-blur-sm mt-2 shadow-lg"
+      >
+        <a
+          href="index.html"
+          class="block py-2 px-4 text-center hover:bg-gray-200"
+        >
+          Back to Portfolio
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main
+      class="max-w-5xl mx-auto px-4 pt-28 pb-16 md:pt-32 md:pb-20 relative"
+    >
+      <!-- Page Title -->
+      <header class="mb-10 text-center md:text-left">
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 inline-flex items-center gap-2"
+        >
+          <i class="fas fa-tools text-orange-500"></i>
+          <span>Tools Lab Reflection</span>
+        </h1>
+        <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
+          The Tools Lab has been one of the most hands-on and practical
+          components of my learning journey. This experience focused on
+          technical proficiency and the strategic application of modern
+          technology to enhance learning, research, and design workflows.
+        </p>
+      </header>
+
+      <!-- Sections Wrapper -->
+      <section class="space-y-10">
+        <!-- 1. Concept Mapping & Mind Mapping -->
+        <article class="p-6 rounded-xl shadow-lg bg-white/90">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-orange-600">
+            <i class="fas fa-sitemap mr-2 text-black"></i> Concept Mapping & Mind
+            Mapping
+          </h2>
+          <p class="text-gray-600 mb-4">
+            I used multiple platforms to transform complex topics into clear,
+            visual knowledge structures, enhancing my visual thinking and
+            knowledge representation skills.
+          </p>
+
+          <h3 class="text-lg font-semibold mt-4 mb-2">
+            Tools Used & Key Learning:
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li>
+              <b>Miro</b>: Collaborative brainstorming and dynamic team
+              visualization.
+            </li>
+            <li>
+              <b>FigJam</b>: Smooth, expressive mind mapping and quick ideation.
+            </li>
+            <li>
+              <b>Draw.io</b>: Structured diagrams and formal concept maps.
+            </li>
+            <li>
+              <b>NotebookLM</b>: Automatically generates mind maps from
+              documents using AI, helping extract key ideas and relationships.
+            </li>
+          </ul>
+
+          <div
+            class="mt-4 p-3 bg-gray-50 rounded-lg border text-sm text-gray-700"
+          >
+            Mind Map Example:
+            <a
+              href="https://drive.google.com/file/d/18Suj_Nqmlf2GKSfuFo5pdvpaD7BPUmyh/view?usp=sharing"
+              target="_blank"
+              class="text-orange-500 hover:text-orange-600 underline"
+            >
+              View Mind Map File
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. Prototype Design -->
+        <article class="p-6 rounded-xl shadow-lg bg-white/90">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-orange-600">
+            <i class="fas fa-drafting-compass mr-2 text-black"></i> Prototype Design
+          </h2>
+          <p class="text-gray-600 mb-4">
+            <b>Figma</b> and <b>Stitch with Google</b> helped me convert early
+            ideas into interactive prototypes and user flows, strengthening my
+            foundation in UI/UX.
+          </p>
+
+          <h3 class="text-lg font-semibold mt-4 mb-2">Skills Developed:</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li>Wireframing and layout design.</li>
+            <li>Applying core UI/UX principles.</li>
+            <li>Creating interactive flows.</li>
+            <li>Designing user-centered learning interfaces.</li>
+          </ul>
+
+          <div class="mt-4 p-3 bg-gray-50 rounded-lg border text-sm">
+            <p class="text-gray-700">
+              Design Example:
+              <a
+                href="https://stitch.withgoogle.com/projects/9183785058476974107"
+                target="_blank"
+                class="text-orange-500 hover:text-orange-600 underline"
+                >Project on Stitch with Google</a
+              >
+            </p>
+            <p class="text-gray-700">
+              Prototype Example:
+              <a
+                href="https://www.figma.com/make/O4HsKVIWPvP5MffMoRXvLq/Learning-Analytics-Dashboard-Prototype?node-id=0-1&t=NpZEi7F0M0dtY8si-1"
+                target="_blank"
+                class="text-orange-500 hover:text-orange-600 underline"
+                >Project on Figma</a
+              >
+            </p>
+          </div>
+        </article>
+
+        <!-- 3. Prompt Engineering -->
+        <article class="p-6 rounded-xl shadow-lg bg-white/90">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-orange-600">
+            <i class="fas fa-robot mr-2 text-black"></i> Prompt Engineering
+          </h2>
+          <p class="text-gray-600 mb-4">
+            I practiced structured prompt writing to maximize the usefulness and
+            accuracy of responses from AI tools like <b>ChatGPT</b> and
+            <b>Gemini</b>, which significantly improved my workflow.
+          </p>
+
+          <h3 class="text-lg font-semibold mt-4 mb-2">Key Skills Developed:</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li>Writing effective and clear prompts.</li>
+            <li>Using structured frameworks for accuracy.</li>
+            <li>
+              Leveraging LLMs for analysis, ideation, and content creation.
+            </li>
+            <li>Applying AI tools to research and design tasks.</li>
+          </ul>
+        </article>
+
+        <!-- 4. Video Creation & Editing -->
+        <article class="p-6 rounded-xl shadow-lg bg-white/90">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-orange-600">
+            <i class="fas fa-video mr-2 text-black"></i> Video Creation & Editing
+          </h2>
+          <p class="text-gray-600 mb-4">
+            I worked with various free and professional video tools to create
+            educational and demo videos with clear narration, text overlays, and
+            smooth transitions.
+          </p>
+
+          <h3 class="text-lg font-semibold mt-4 mb-2">
+            Tools Used & Learning Outcomes:
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li>Tools: CapCut, DaVinci Resolve, Canva (Free), OpenShot.</li>
+            <li>
+              Outcomes: Editing, trimming, transitions, adding captions,
+              improving audio, and exporting in suitable formats for sharing.
+            </li>
+          </ul>
+        </article>
+
+        <!-- 5. Literature Review -->
+        <article class="p-6 rounded-xl shadow-lg bg-white/90">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-orange-600">
+            <i class="fas fa-book-open mr-2 text-black"></i> Literature Review
+          </h2>
+          <p class="text-gray-600 mb-4">
+            These tools streamlined my research process and helped me organize
+            papers, citations, and summaries more efficiently.
+          </p>
+
+          <h3 class="text-lg font-semibold mt-4 mb-2">
+            Tools Used & Function:
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li><b>Google Scholar</b>: Academic paper search.</li>
+            <li><b>Zotero</b>: Reference and citation management.</li>
+            <li>
+              <b>Perplexity</b>: Quick exploration of topics with AI-assisted
+              summaries.
+            </li>
+          </ul>
+        </article>
+
+        <!-- 6. Portfolio Development -->
+        <article class="p-6 rounded-xl shadow-lg bg-white/90">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-orange-600">
+            <i class="fas fa-laptop-code mr-2 text-black"></i> Portfolio Development
+          </h2>
+          <p class="text-gray-600 mb-4">
+            I used AI tools and modern web builders to develop, refine, and
+            iterate on my online portfolio.
+          </p>
+
+          <h3 class="text-lg font-semibold mt-4 mb-2">Tools Used & Skills:</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li>
+              Tools: Gemini, ChatGPT, Framer, Lovable, Firebase Studio (for
+              hosting and prototyping).
+            </li>
+            <li>
+              Skills: Layout design, AI-assisted content refinement, and
+              understanding deployment/hosting workflows.
+            </li>
+          </ul>
+        </article>
+
+        <!-- 7. Visualization & Data Analysis -->
+        <article class="p-6 rounded-xl shadow-lg bg-white/90">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-orange-600">
+            <i class="fas fa-chart-bar mr-2 text-black"></i> Visualization & Data Analysis
+          </h2>
+          <p class="text-gray-600 mb-4">
+            I explored several tools to visualize and analyze learning data,
+            build dashboards, and create ML pipelines.
+          </p>
+
+          <!-- Tableau -->
+          <h3 class="text-xl font-semibold mt-4 mb-2">
+            A. Tableau (Interactive Dashboards)
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li>Created interactive dashboards for learning analytics data.</li>
+            <li>
+              Skills: Filters, parameters, dashboard layout, and pattern
+              interpretation.
+            </li>
+            <li>
+              Hands-on:
+              <a
+                href="https://public.tableau.com/views/LA_Tableau_Assignment2/Dashboard2?:language=en-US"
+                target="_blank"
+                class="text-orange-500 hover:text-orange-600 underline font-medium"
+              >
+                View Tableau Dashboard
+              </a>
+            </li>
+          </ul>
+
+          <!-- Orange -->
+          <h3 class="text-xl font-semibold mt-5 mb-2">
+            B. Orange (Data Mining & Visualization)
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li>
+              Used drag-and-drop workflows to build visual data mining pipelines.
+            </li>
+            <li>
+              Generated scatter plots, box plots, clustering visualizations, and
+              more without writing code.
+            </li>
+          </ul>
+
+          <!-- Google Colab -->
+          <h3 class="text-xl font-semibold mt-5 mb-2">
+            C. Google Colab (Python Visualization)
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li>Tools: Matplotlib, Seaborn, Plotly.</li>
+            <li>
+              Learned to combine ML models and visualization for better insight
+              into student data.
+            </li>
+          </ul>
+
+          <!-- MS Excel -->
+          <h3 class="text-xl font-semibold mt-5 mb-2">
+            D. MS Excel (Quick Analysis)
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 ml-1 sm:ml-4">
+            <li>Used for quick exploration and analysis of small datasets.</li>
+            <li>
+              Created pivot tables, charts, and used conditional formatting for
+              pattern recognition.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Overall Summary -->
+      <section class="mt-14 pt-6 border-t border-gray-200">
+        <h2
+          class="text-2xl sm:text-3xl font-bold mb-4 text-center text-gray-800"
+        >
+          Overall Tools Lab Summary
+        </h2>
+        <p
+          class="text-base sm:text-lg text-center max-w-3xl mx-auto leading-relaxed text-gray-700"
+        >
+          The Tools Lab enhanced my technical proficiency and strengthened my
+          ability to use EdTech tools effectively for learning, teaching, and
+          design. It helped me integrate multiple tools to solve problems and to
+          think visually, analytically, and creatively.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/80 backdrop-blur-sm p-4 text-center text-gray-600">
+      <p class="text-sm">
+        © <span id="year"></span> Priyansh Kumar. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
+
+    <script>
+      // Vanta background
+      window.addEventListener("load", () => {
+        VANTA.BIRDS({
+          el: "#vanta-background",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color1: 0xf4084d,
+          color2: 0xe5ff00,
+          birdSize: 2.0,
+          wingSpan: 13.0,
+          speedLimit: 8.0,
+          quantity: 1.0,
+          backgroundAlpha: 0.0,
+        });
+      });
+
+      // Mobile nav toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll("a");
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+          });
+        });
+      }
+
+      // Dynamic year
+      document.addEventListener("DOMContentLoaded", () => {
+        const yearSpan = document.getElementById("year");
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+      });
+    </script>
+  </body>
+</html>
